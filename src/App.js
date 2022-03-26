@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import ColoredText from './componentes/ColoredText'
+import { getLabel, Button } from './componentes/Button';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* lancei uma firula no texto colorido kkkk só de zoa pra testar */}
+      <ColoredText textColor='#fff' textCase='uppercase' bgColor='coral' weight='900'/>
+      <Button label='DEV EM DOBRO' getLabel={getLabel}/>
+    </>
   );
 }
 
